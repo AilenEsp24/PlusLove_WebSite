@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu{
+    margin-left: 45vh;
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    right:0%;
+    background:linear-gradient(white 10%,rgba(255,255,255,0));
+    list-style: none;
+    text-decoration: none;
+    font-weight: 650;
+    font-size: 22px;
+}
+.menu li{
+    display: inline-block;
+    margin: 32px; 
+}
+.logo{
+    height: 50px;   
+}
+.heroImage{
+    width: 1900px;
+    height:1250px;
+    object-fit: contain;
+}
+.frase{
+    display: inline-block;
+    position:absolute;
+    left: 320px;
+    bottom: 600px;
+    font-weight: bold;
+    font-size: 150px;
+    color:#20254E  
+}
+.frase_boton{
+    display: inline-block;
+    font-weight:400;
+    color:white;
+    background: linear-gradient(#20254E,#CF1353);
+    border-radius: 30px;
+    padding: 15px;
+    position:absolute;
+    top: 900px;
+    left: 820px;
+}
+.frase_boton a{
+    color: white;
+    text-decoration: none;
+}
+a{
+    color: #20254e;
+    text-decoration: none;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.piePagina{
+    background-color:rgb(255, 255, 255);
+    margin-left: 850px;
+    
+}
+.piePagina a{
+    margin: 20px;
+}
+
+footer p{
+    margin-left: 1400px;
+}
+.menuSegundo{
+    width: 1900px;
+    height: 100px;
+    background:linear-gradient(#7379A7,white);
+    list-style: none;
+    text-decoration: none;
+    font-weight: 650;
+    font-size: 22px;
+}
+.menuSegundo li{
+    display: inline-block;
+    margin: 32px;
+}
+.bodySeg{
+    position: relative;
+    padding-bottom: 10vh;
+    min-height: 100vh;
+}
+.seguridadBloque{
+    margin-top:40px;
+    margin-left: 40px;
+    height: 400px;
+    width: 800px;
+}
+.seguridadBloque {
+    padding-left: 60px;
+    font-size: large;
+    color: rgb(45, 45, 45);
+    margin-bottom: 30px;
+}
+.seguridadBloque li{
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.seguridadImg{
+    height: 900px;
+    object-fit: contain;
+    margin-left: 950px;
+    position: relative;
+    bottom: 400px;
+}
+.nosotrosTitulo{
+    color: rgb(45, 45, 45);
+    font-size: 20px;
+    text-align: center;
+    height: 400px;
+    width: 800px;
+    margin-left: 550px;
+    margin-top: 40px;
+}
+.nosotrosTitulo p{
+    margin-top: 30px;
+}
+.bloquesNosotros{
+    background-color: rgb(221, 221, 221);
+    
+}
+.bloqueUno{
+    font-size: 20px;
+    margin-top:40px;
+    margin-left: 40px;
+    height: 400px;
+    width: 800px;
+}
+.bloqueDos{
+    font-size: 20px;
+    margin-left:1000px;
+    height: 400px;
+    width: 800px;
+    position: relative;
+    bottom: 400px;
+}
+.bloqueDos li{
+    margin-left: 40px;
+}
+.nosotrosDos{
+    width: 600px;
+    margin-left: 100px;
+}
+.contactoTitulo{
+    color: rgb(45, 45, 45);
+    font-size: 20px;
+    text-align: center;
+    height: 220px;
+    width: 800px;
+    margin-left: 550px;
+    margin-top: 40px;
+}
+.contactoTitulo p{
+    margin-top: 30px;
+}
+.contacto{
+    background-color: gray;
+    height: 400px;
+    width: 300px;
+    margin-left: 800px;
+    border-radius: 15px;
+    position: relative;
+}
+.contacto form{
+    font-size: 16px;
+    color:white;
+    position:absolute;
+    left: 16px; 
+    top: 30px;
+
+}
+.funcionesBloque{
+    color: rgb(45, 45, 45);
+    font-size: 20px;
+    text-align: center;
+    height: 300px;
+    width: 800px;
+    margin-left: 550px;
+    margin-top: 40px;
+}
+.funcionesImg{
+    height: 1200px;
+    margin-left: 90px;
+}
+    
