@@ -4,11 +4,37 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.bodyGrid {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    row-gap: 15px;
+    grid-template-areas:
+        "cabecera cabecera cabecera "
+        "centro centro centro"
+        "centro centro centro"
+        "pie pie pie"  
+    
+}
+
+.cabecera{
+    grid-area: cabecera;
+}
+
+.centro{
+    grid-area:centro;
+}
+
+.piePagina{
+    grid-area: pie;
+
+}
+
 .menu{
     margin-left: 45vh;
     content:"";
     width:100%;
-    height:100%;
+    height:70%;
     position:absolute;
     top:0%;
     right:0%;
@@ -18,63 +44,118 @@
     font-weight: 650;
     font-size: 22px;
 }
+
 .menu li{
     display: inline-block;
     margin: 32px; 
 }
+
 .logo{
     height: 50px;   
 }
+
 .heroImage{
     width: 1900px;
-    height:1250px;
-    object-fit: contain;
+    height:800px;
+    object-fit: cover;
 }
+
 .frase{
     display: inline-block;
     position:absolute;
     left: 320px;
-    bottom: 600px;
+    bottom: 500px;
     font-weight: bold;
     font-size: 150px;
     color:#20254E  
 }
-.frase_boton{
+
+.frase_boton {
+    min-width: 130px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
     display: inline-block;
-    font-weight:400;
-    color:white;
-    background: linear-gradient(#20254E,#CF1353);
-    border-radius: 30px;
-    padding: 15px;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #CF1353;
+    background: #CF1353;
+    padding: 10px;
     position:absolute;
-    top: 900px;
-    left: 820px;
+    top: 650px;
+    left: 850px;    
+  }
+
+  .frase_boton:hover {
+    background: #fff;
+    color: #CF1353
 }
+
 .frase_boton a{
     color: white;
     text-decoration: none;
 }
+
 a{
     color: #20254e;
     text-decoration: none;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.piePagina{
-    background-color:rgb(255, 255, 255);
-    margin-left: 850px;
-    
-}
-.piePagina a{
-    margin: 20px;
+
+.carrusel{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #CF1353; 
+    padding: 20px;  
 }
 
-footer p{
-    margin-left: 1400px;
+.carrusel_card{
+    background-color: white;
+    box-shadow: 5px 5px 10px #20254E;
+    border-radius: 10px;
+    width: 400px;
+    height: 150px;
+    margin: 20px;
+    padding: 10px;
 }
+
+.piePagina_seccion{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.underline{
+    color: var(#20254E);
+    display: inline-block;
+    position: relative;
+}
+
+.underline:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #20254E;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+
+.underline:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .menuSegundo{
     width: 1900px;
     height: 100px;
@@ -84,38 +165,59 @@ footer p{
     font-weight: 650;
     font-size: 22px;
 }
-.menuSegundo li{
-    display: inline-block;
-    margin: 32px;
+
+.menuSegundo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
 }
-.bodySeg{
-    position: relative;
-    padding-bottom: 10vh;
+
+.bodySegu{
     min-height: 100vh;
-}
-.seguridadBloque{
-    margin-top:40px;
-    margin-left: 40px;
-    height: 400px;
-    width: 800px;
-}
-.seguridadBloque {
-    padding-left: 60px;
-    font-size: large;
-    color: rgb(45, 45, 45);
-    margin-bottom: 30px;
-}
-.seguridadBloque li{
-    margin-bottom: 20px;
-    margin-left: 40px;
-}
-.seguridadImg{
-    height: 900px;
-    object-fit: contain;
-    margin-left: 950px;
     position: relative;
-    bottom: 400px;
+    display: grid;
+    row-gap: 15px;
+    grid-template-areas:
+        "cabeceraS cabeceraS cabeceraS"
+        "texto texto img"
+        "pieS pieS pieS"     
 }
+
+.cabeceraSeg{
+    grid-area: cabeceraS;
+    
+}
+
+.seguridadBloque{
+    grid-area: texto;
+    margin: 30px;
+    padding: 10px;
+    width: 800px;
+    font-size: 18px;
+    
+}
+
+.seguridadImg{
+    grid-area: img;;
+    width: 900px;
+}
+
+.piePaginaSeg{
+    grid-area: pieS;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.piePaginaSegu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
 .nosotrosTitulo{
     color: rgb(45, 45, 45);
     font-size: 20px;
@@ -125,9 +227,11 @@ footer p{
     margin-left: 550px;
     margin-top: 40px;
 }
+
 .nosotrosTitulo p{
     margin-top: 30px;
 }
+
 .bloquesNosotros{
     background-color: rgb(221, 221, 221);
     
@@ -139,6 +243,7 @@ footer p{
     height: 400px;
     width: 800px;
 }
+
 .bloqueDos{
     font-size: 20px;
     margin-left:1000px;
@@ -147,41 +252,139 @@ footer p{
     position: relative;
     bottom: 400px;
 }
+
 .bloqueDos li{
     margin-left: 40px;
 }
+
 .nosotrosDos{
     width: 600px;
     margin-left: 100px;
 }
-.contactoTitulo{
-    color: rgb(45, 45, 45);
-    font-size: 20px;
-    text-align: center;
-    height: 220px;
-    width: 800px;
-    margin-left: 550px;
-    margin-top: 40px;
-}
-.contactoTitulo p{
-    margin-top: 30px;
-}
-.contacto{
-    background-color: gray;
-    height: 400px;
-    width: 300px;
-    margin-left: 800px;
-    border-radius: 15px;
-    position: relative;
-}
-.contacto form{
-    font-size: 16px;
-    color:white;
-    position:absolute;
-    left: 16px; 
-    top: 30px;
 
+.bodyCont{
+    display: flex;
+    flex-direction: column;
 }
+
+.contactoTitulo{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 3.5em 3em ;
+}
+    
+.form{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em ;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 50%);
+    text-align: center;
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+    
+.form_link{
+    font-weight: 400;
+    color:black;
+}
+    
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+    
+.form_group{
+    position: relative;
+    --color: #5757577e;
+}
+    
+.form_input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.form_input:not(:placeholder-shown){
+    color: #4d4646;
+}
+    
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+    transform:translateY(-12px) scale(.9);
+    transform-origin: left top;
+    color: #CF1353;
+}
+
+.form_label{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.botones{
+    margin: 30px;
+}
+
+.form_submit {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #CF1353;
+    background: #CF1353;
+    margin-top: 20px;
+  }
+  .form_submit:hover {
+    background: #fff;
+    color: #CF1353
+  }
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #20254E;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
+
+@media (max-width:425px){
+    .form_titl{
+        font-size: 1.8rem;
+    }
+}
+
 .funcionesBloque{
     color: rgb(45, 45, 45);
     font-size: 20px;
@@ -191,8 +394,155 @@ footer p{
     margin-left: 550px;
     margin-top: 40px;
 }
+
 .funcionesImg{
     height: 1200px;
     margin-left: 90px;
 }
-    
+
+@media only screen and (max-width:480px) {
+    .bodyGrid {
+        min-height: 100vh;
+        position: relative;
+        display: grid;
+        grid-template-areas:
+            "cabecera cabecera"
+            "centro centro"
+            "centro centro"
+            "pie pie"  
+        ;
+      }
+      .logo{
+        height: 30px;   
+    }
+    .heroImage{
+        width: 900px;
+        height:800px;
+        object-fit: cover;
+    }
+    .frase{
+        display: inline-block;
+        position:absolute;
+        left: 35px;
+        bottom: 1100px;
+        font-weight: bold;
+        font-size: 30px;
+        color:#20254E  
+    }
+    .frase_boton{
+        display: inline-block;
+        font-weight:300;
+        color:white;
+        background: linear-gradient(#20254E,#CF1353);
+        border-radius: 30px;
+        padding: 15px;
+        position:absolute;
+        top: 500px;
+        left: 50px;
+        animation: pulse 1.5s infinite;
+    }
+    .menu{
+        content:"";
+        width:100%;
+        height:70%;
+        position:absolute;
+        top:0%;
+        right:0%;
+        background:linear-gradient(white 10%,rgba(255,255,255,0));
+        list-style: none;
+        text-decoration: none;
+        font-weight: 650;
+        font-size: 22px;
+    }
+    .menu{
+        font-size: 18px;
+    }
+    .carrusel{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #CF1353; 
+        padding: 20px;
+        
+        
+    }
+    .carrusel_card{
+        background-color: white;
+        box-shadow: 5px 5px 10px #20254E;
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+        padding: 10px;
+        font-size: 14px;
+        margin-left: 35px;
+    }
+    .piePagina_seccion{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        margin-left: 120px;
+    }
+    .piePagina p{
+        font-size: 10px;
+        margin-left: 25px;
+    }
+    .bodySegu{
+        min-height: 100vh;
+        position: relative;
+        display: grid;
+        grid-template-areas:
+            "cabeceraS"
+            "texto"
+            "img"
+            "pieS"     
+    }
+    .seguridadBloque{
+        margin: 40px;
+        width: 300px;
+        font-size: 14px;
+        
+    }
+    .seguridadImg{
+        width: 400px;
+        margin-left: 10px;
+    }
+    .piePaginaSeg{
+        height: 100px;
+    }
+    .piePaginaSegu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap:20px;
+        margin-left: 160px;
+    }
+    .piePaginaSeg p{
+        font-size: 10px;
+        margin-left: 50px;
+        padding: 20px;
+
+    }
+    .menuSegundo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .menuSegundo li{
+        margin-left: 150px;
+    }
+    .menuSegundo{
+        width: 100vh;
+        height: 300px;
+        background:linear-gradient(#7379A7,white);
+        list-style: none;
+        text-decoration: none;
+        font-weight: 650;
+        font-size: 22px;
+    }
+}
