@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>PlusLove</title>
 </head>
-<body>
-    <header>
+<body class="bodyCont">
+    <header class="bodyCont">
         <nav class="navBar">
             <ul class="menuSegundo">
                 <li>
@@ -34,35 +34,38 @@
             </ul>
         </nav>
     </header>
-        <main>
+        <main class="contacto">
             <div class="contactoTitulo">
                 <h1>¿Te interesa darnos una mano?</h1>
                 <p>Completá el siguiente formulario para participar de encuestas y entrevistas, ¡nos ayudarías mucho a mejorar!</p>
             </div>
-            <div class="contacto">
-                <form class="contactoForm">
-                    <label class="label" for="nombre_completo">Nombre y Apellido:</label>
-                    <br>
-                    <input class="input" type="text" name="nombre_completo">
-                    <br>
-                    <label class="label" for="fecha_nacimiento">Fecha de nacimiento:</label>
-                    <br>
-                    <input  class="input" type="date" name="fecha_nacimiento">
-                    <br>
-                    <label class="label" for="email">Email:</label>
-                    <br>
-                    <input class="input" type="email" name="email">
-                    <br>
-                    <label class="label" for="novedades">¿Desea recibir novedades sobre el proyecto?</label>
-                    <input class="input" type="checkbox" name="novedades">
-                    <br>
-                    <input class="boton" type="submit">
-                    <input class="boton" type="reset">
-                </form>
-            </div>    
+            <form class="form">
+                <h2 class="form_title"> Registra tus datos</h2>
+
+                <div class="form_container">
+                    <div class="form_group">
+                        <input id="name" class="form_input" type="text" name="nombre" placeholder=" ">    
+                        <label class="form_label" for="nombre">Nombre:</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <div class="form_group">
+                        <input id="secondname" class="form_input" type="text" name="apellido" placeholder=" ">    
+                        <label class="form_label" for="apellido">Apellido:</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <div class="form_group">
+                        <input id="email" class="form_input" type="email" name="email" placeholder=" ">
+                        <label class="form_label" for="email">Email:</label>
+                        <span class="form_line"></span>
+                    </div>
+                 </div>
+                <div class="botones">
+                <input class="form_submit" type="submit">
+                </div>
+             </form>    
         </main>
     <footer>    
-        <div class="piePagina">
+        <div class="piePaginaSegu">
             <a href="https://www.behance.net/gallery/131091097/PlusLove-Reporte-UX" target="_blank"><i class="fa-brands fa-behance fa-2xl"></i></a> 
             <a href="https://www.linkedin.com/in/ailen-espinoza-32425818a/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
         </div>

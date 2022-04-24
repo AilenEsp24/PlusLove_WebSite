@@ -60,33 +60,27 @@
     font-size: 150px;
     color:#20254E  
 }
-.frase_boton{
-    display: inline-block;
-    font-weight:400;
-    color:white;
-    background: linear-gradient(#20254E,#CF1353);
-    border-radius: 30px;
+
+.frase_boton {
     padding: 15px;
     position:absolute;
     top: 650px;
     left: 850px;
-    animation: pulse 1.5s infinite;
-}
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #CF1353;
+    background: #CF1353;
+     }
+.frase_boton:hover {
+     background: #fff;
+     color: #CF1353
+     }
 
-@keyframes pulse {
-    0% {
-        transform: scale(.99);
-        box-shadow: 0 0 0 0 rgb(256,256,256, .1); 
-    }
-    70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 25px rgba(256,256,256, 0);
-    }
-    100% {
-        transform: scale(.99);
-        box-shadow: 0 0 0 0 rgba(256,256,256, 0);
-    }
-}
 
 .frase_boton a{
     color: white;
@@ -195,6 +189,7 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     gap:20px;
 }
 
@@ -236,34 +231,7 @@ a{
     width: 600px;
     margin-left: 100px;
 }
-.contactoTitulo{
-    color: rgb(45, 45, 45);
-    font-size: 20px;
-    text-align: center;
-    height: 220px;
-    width: 800px;
-    margin-left: 550px;
-    margin-top: 40px;
-}
-.contactoTitulo p{
-    margin-top: 30px;
-}
-.contacto{
-    background-color: gray;
-    height: 400px;
-    width: 300px;
-    margin-left: 800px;
-    border-radius: 15px;
-    position: relative;
-}
-.contacto form{
-    font-size: 16px;
-    color:white;
-    position:absolute;
-    left: 16px; 
-    top: 30px;
 
-}
 .funcionesBloque{
     color: rgb(45, 45, 45);
     font-size: 20px;
