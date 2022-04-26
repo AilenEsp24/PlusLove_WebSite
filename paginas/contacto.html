@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">>
     <link rel="icon" type="image/x-icon" href="./imagenes/logotipo.png">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,34 +39,35 @@
                 <h1>¿Te interesa darnos una mano?</h1>
                 <p>Completá el siguiente formulario para participar de encuestas y entrevistas, ¡nos ayudarías mucho a mejorar!</p>
             </div>
-            <div class="contacto">
-                <form class="contactoForm">
-                    <label class="label" for="nombre_completo">Nombre y Apellido:</label>
-                    <br>
-                    <input class="input" type="text" name="nombre_completo">
-                    <br>
-                    <label class="label" for="fecha_nacimiento">Fecha de nacimiento:</label>
-                    <br>
-                    <input  class="input" type="date" name="fecha_nacimiento">
-                    <br>
-                    <label class="label" for="email">Email:</label>
-                    <br>
-                    <input class="input" type="email" name="email">
-                    <br>
-                    <label class="label" for="novedades">¿Desea recibir novedades sobre el proyecto?</label>
-                    <input class="input" type="checkbox" name="novedades">
-                    <br>
-                    <input class="boton" type="submit">
-                    <input class="boton" type="reset">
-                </form>
-            </div>    
+             <form class="form">
+                 <h2 class="form_title">Registrá tus datos</h2>
+                 <div class="form_container">
+                     <div class="form_group">
+                        <input id="name" class="form_input" type="text" name="nombre" placeholder=" ">
+                        <label class="form_label" for="nombre">Nombre:</label>
+                        <span class="form_line"></span>    
+                     </div>
+                     <div class="form_group">
+                        <input id="secondName" class="form_input" type="text" name="apellido" placeholder=" ">
+                        <label class="form_label" for="apellido">Apellido:</label>
+                        <span class="form_line"></span>    
+                     </div>
+                     <div class="form_group">
+                        <input id="email" class="form_input" type="email" name="email" placeholder=" ">
+                        <label class="form_label" for="email">Email:</label>
+                        <span class="form_line"></span>    
+                     </div>
+                 </div>
+                <input class="form_submit" type="submit">
+            </form>   
         </main>
-    <footer>    
-        <div class="piePagina">
+    <footer class="piePaginaSeg">
+        <div class="piePaginaSegu">
             <a href="https://www.behance.net/gallery/131091097/PlusLove-Reporte-UX" target="_blank"><i class="fa-brands fa-behance fa-2xl"></i></a> 
             <a href="https://www.linkedin.com/in/ailen-espinoza-32425818a/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
         </div>
-        <p>© 2022 Florencia Espinoza, todos los derechos reservados.</p>        
+        <p>© 2022 Florencia Espinoza, todos los derechos reservados.</p>  
+            
     </footer>
 </body>
 </html>
