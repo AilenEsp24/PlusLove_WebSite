@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 .bodyGrid {
     min-height: 100vh;
     position: relative;
@@ -15,6 +14,27 @@
         "centro centro centro"
         "pie pie pie"  
     
+}
+.cabecera{
+    grid-area: cabecera;
+}
+.centro{
+    grid-area:centro;
+}
+.piePagina{
+    grid-area: pie;
+}
+
+.bodyGrid {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    row-gap: 15px;
+    grid-template-areas:
+        "cabecera cabecera cabecera "
+        "centro centro centro"
+        "centro centro centro"
+        "pie pie pie"      
 }
 
 .cabecera{
@@ -130,6 +150,7 @@ a{
 	overflow: hidden;
     min-height: 290px;
 }
+
 .carousel .item .img-box {
 	width: 135px;
 	height: 135px;
@@ -144,8 +165,10 @@ a{
 	display: block;
 	border-radius: 50%;
 }
+
 .carousel .testimonial {
 	padding: 30px 0 10px;
+  
 }
 .carousel .overview {	
 	font-style: italic;
@@ -190,11 +213,13 @@ a{
     margin-top: 30px;
 }
 
+
 .piePaginaSegu{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     gap:20px;
 }
 
