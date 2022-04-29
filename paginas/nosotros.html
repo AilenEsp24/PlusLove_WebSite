@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,63 +13,72 @@
     <link rel="icon" type="image/x-icon" href="./imagenes/logotipo.png">
     <title>PlusLove</title>
 </head>
-<body>
+<body class="back">
     <header>
-        <nav class="navBar">
-            <ul class="menuSegundo">
-                <li>
-                    <a href="../index.html"><img class="logo" src="../imagenes/logoCompleto_Mesa de trabajo 1.png" alt="Logo PlusLove"></a> 
-                </li>
-                <li>
-                    <a class="underline" href="seguridad.html">Seguridad</a>
-                </li>
-                <li>
-                    <a class="underline" href="#">Nosotros</a>
-                </li>   
-                <li>
-                    <a class="underline" href="funciones.html">Funciones</a>
-                </li>
-                <li>
-                    <a class="underline" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../imagenes/logoCompleto_Mesa de trabajo 1.png" alt="logo-PlusLove" width="170" height="30"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/paginas/seguridad.html">Seguridad</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/paginas/funciones.html">Funciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/paginas/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>   
     <main>
-        <div class="nosotrosTitulo">
-            <h1>¿Sabias que 2 de cada 5 jovenes prefieren relaciones sentimantales poliamorosas?</h1>
-            <p>Los cambios de la sociedad actual han recibido a nuevas identidad de género que antes eran reprimidas. A su vez, son cada vez más las personas que no se encuentran conformes en las relaciones monógamas tradicionales y buscan relaciones abiertas o con más de una persona a la vez. El poliamor es considerado hoy en día casi una orientación sexual.</p>
-        </div>
-        <div class="bloquesNosotros">
-            <div class="bloqueUno">
-                <h3>Problema</h3>
-                <p>El mercado actual, si bien ha desarrollado formas que permiten conocer personas de manera remota, no se han adaptado a este tipo de relaciones, por lo que los usuarios no encuentran lugar donde sentirse cómodos, representado y capaces conocer gente que viven el amor de la misma manera.</p>
-                <img class="nosotrosUno" src="../imagenes/nosotros1.svg" alt="grupo poliamoroso juntando sus manos"> 
+        <section class="container-sm">
+            <div class="otroTitulo">
+                <h1>¿Sabias que 2 de cada 5 jovenes prefieren relaciones sentimantales poliamorosas?</h1>
+                <p>Los cambios de la sociedad actual han recibido a nuevas identidad de género que antes eran reprimidas. A su vez, son cada vez más las personas que no se encuentran conformes en las relaciones monógamas tradicionales y buscan relaciones abiertas o con más de una persona a la vez. El poliamor es considerado hoy en día casi una orientación sexual.</p>
             </div>
-            <div class="bloqueDos">
-                <h3>Nuestra propuesta</h3>
-                <p>Brindar un servicio donde los usuarios se sientan cómodamente representados tanto por su identidad de género como por su manera de mantener vínculos sexoafectivos y logren conocer personas de su interés en las mismas condiciones que ellos. En resumen, un espacio de comprensión, que facilite el diálogo en poliamorosos para que logren expresarse sin tapujos.</p>
-                <h4>Objetivos</h4>
-                <ul class="listObj">
-                    <li>Brindar todas las opciones posibles en cuánto a género y sexo a la hora de que
-                        el usuario se registre.
-                    </li>
-                    <li>
-                        Habilitación de chats grupales a la hora de que varias personas se aprueben.
-                    </li>
-                    <li>
-                        Mayor privacidad en las cuentas.
-                    </li>
-                    <li>
-                        Verificación de que los usuarios sean personas reales interesadas en el poliamor y las relaciones libres.
-                    </li>
-                    <li>
-                        Conciencia de los diferentes tipos de relaciones poliamorosas que existen.
-                    </li>
-                </ul>
-                <img class="nosotrosDos" src="../imagenes/nosotros2.svg" alt="grupo trabajando en reunion de manera virtual">
+        </section>
+        <section class="container-sm">
+            <div class="row ">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h3>Problema</h3>
+                    <p>El mercado actual, si bien ha desarrollado formas que permiten conocer personas de manera remota, no se han adaptado a este tipo de relaciones, por lo que los usuarios no encuentran lugar donde sentirse cómodos, representado y capaces conocer gente que viven el amor de la misma manera.</p>
+                    <img class="nosotrosUno" src="../imagenes/nosotros1.svg" alt="grupo poliamoroso juntando sus manos"> 
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h3>Nuestra propuesta</h3>
+                    <p>Brindar un servicio donde los usuarios se sientan cómodamente representados tanto por su identidad de género como por su manera de mantener vínculos sexoafectivos y logren conocer personas de su interés en las mismas condiciones que ellos. En resumen, un espacio de comprensión, que facilite el diálogo en poliamorosos para que logren expresarse sin tapujos.</p>
+                    <h4>Objetivos</h4>
+                    <ul class="listObj">
+                        <li>
+                            Brindar todas las opciones posibles en cuánto a género y sexo a la hora de que el usuario se registre.
+                        </li>
+                        <li>
+                            Habilitación de chats grupales a la hora de que varias personas se aprueben.
+                        </li>
+                        <li>
+                            Mayor privacidad en las cuentas.
+                        </li>
+                        <li>
+                            Verificación de que los usuarios sean personas reales interesadas en el poliamor y las relaciones libres.
+                        </li>
+                        <li>
+                            Conciencia de los diferentes tipos de relaciones poliamorosas que existen.
+                        </li>
+                    </ul>
+                    <img class="nosotrosDos" src="../imagenes/nosotros2.svg" alt="grupo trabajando en reunion de manera virtual">
             </div>
         </div>
+        </section> 
     </main> 
     <footer class="piePaginaSeg">
         <div class="piePaginaSegu">
@@ -78,5 +88,6 @@
         <p>© 2022 Florencia Espinoza, todos los derechos reservados.</p>  
         
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,59 +13,68 @@
     <script src="https://kit.fontawesome.com/2d82bb3f09.js" crossorigin="anonymous"></script>
     <title>PlusLove</title>
 </head>
-<body class="bodySegu">
+<body class="back">
     <header class="cabeceraSeg">
-        <nav class="navBar">
-            <ul class="menuSegundo">
-                <li>
-                    <a href="../index.html"><img class="logo" src="../imagenes/logoCompleto_Mesa de trabajo 1.png" alt="Logo PlusLove"></a> 
-                </li>
-                <li>
-                    <a class="underline" href="#">Seguridad</a>
-                </li>
-                <li>
-                    <a class="underline" href="nosotros.html">Nosotros</a>
-                </li>   
-                <li>
-                    <a class="underline" href="funciones.html">Funciones</a>
-                </li>
-                <li>
-                    <a class="underline" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+             <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img src="../imagenes/logoCompleto_Mesa de trabajo 1.png" alt="logo-PlusLove" width="170" height="30"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/paginas/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Seguridad</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/paginas/funciones.html">Funciones</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/paginas/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+             </div>
+            </nav>
     </header>
     <main>
-        <div class="seguridadBloque">
-            <h2>Consejos de seguridad</h2>
-            <p>Conocer gente nueva es una experiencia magnífica, siempre que tengamos cuidado con aquellos que aún no conocemos bien. Si bien no podemos tener control de las acciones y pensamiento de otros, lo que si podemos es priorizar nuestra seguridad y comodidad.</p>
-            <ul>
-                <li><b>Protege tu información personal</b><br> Nunca comparta información personal como la dirección de su casa o trabajo, o detalles sobre su rutina diaria con personas que no conozca. Si usted es padre, limite la información que comparte sobre sus hijos en su perfil y en las primeras conversaciones.
-                </li>    
-                <li><b>Informe todo comportamiento sospechoso y ofensivo</b><br>
-                    En PlusLove manejamos una política de cero tolerancia a los actos ofensivos hacia las personas. Bloquee e informe sobre cualquier persona que viole nuestros términos. A continuación le mostramos algunos ejemplos de violaciones:
-                    Solicitudes de dinero o donaciones
-                    Usuarios menores de edad
-                    Acoso, amenazas y mensajes ofensivos
-                    Comportamiento inapropiado o perjudicial durante o después de reunirse en persona
-                    Perfiles fraudulentos
-                    Spam o solicitudes, como enlaces a sitios web comerciales o intentos de vender productos o servicios
-                </li>
-                <li>
-                    <b>Nunca envíe dinero ni comparta información financiera</b><br> Nunca envíe dinero aunque la persona alegue que es una emergencia. Así mismo, nunca comparta información que pueda usarse para acceder a sus cuentas financieras. En caso de que sucediese, puede realizar la denuncia de forma gratuita en el siguiente enlace.
-                </li>
-                <li>
-                    <b>Sigue tus conversaciones en PlusLove</b><br> Mientras conoce a alguien, mantenga las conversaciones en la plataforma de PlusLove. Si sucediese algún problema y se cambió el lugar de la conversación, no podríamos accionar.
-                </li>
-                <li>
-                    <b>Proteja su cuenta</b><br> Asegúrese de elegir una contraseña segura y tenga siempre cuidado al iniciar sesión en su cuenta desde una computadora pública o compartida. Si recibe un correo electrónico en el que se le solicita información sobre su cuenta, repórtelo de inmediato.
-                </li>
-            </ul>
-        </div>
+        <section class="container-sm">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2>Consejos de seguridad</h2>
+                    <p>Conocer gente nueva es una experiencia magnífica, siempre que tengamos cuidado con aquellos que aún no conocemos bien. Si bien no podemos tener control de las acciones y pensamiento de otros, lo que si podemos es priorizar nuestra seguridad y comodidad.</p>
+                    <ul>
+                        <li><b>Protege tu información personal</b><br> Nunca comparta información personal como la dirección de su casa o trabajo, o detalles sobre su rutina diaria con personas que no conozca. Si usted es padre, limite la información que comparte sobre sus hijos en su perfil y en las primeras conversaciones.
+                        </li>    
+                        <li><b>Informe todo comportamiento sospechoso y ofensivo</b><br>
+                        En PlusLove manejamos una política de cero tolerancia a los actos ofensivos hacia las personas. Bloquee e informe sobre cualquier persona que viole nuestros términos. A continuación le mostramos algunos ejemplos de violaciones:
+                        Solicitudes de dinero o donaciones
+                        Usuarios menores de edad
+                        Acoso, amenazas y mensajes ofensivos
+                        Comportamiento inapropiado o perjudicial durante o después de reunirse en persona
+                        Perfiles fraudulentos
+                        Spam o solicitudes, como enlaces a sitios web comerciales o intentos de vender productos o servicios
+                        </li>
+                        <li>
+                            <b>Nunca envíe dinero ni comparta información financiera</b><br> Nunca envíe dinero aunque la persona alegue que es una emergencia. Así mismo, nunca comparta información que pueda usarse para acceder a sus cuentas financieras. En caso de que sucediese, puede realizar la denuncia de forma gratuita en el siguiente enlace.
+                        </li>
+                        <li>
+                            <b>Sigue tus conversaciones en PlusLove</b><br> Mientras conoce a alguien, mantenga las conversaciones en la plataforma de PlusLove. Si sucediese algún problema y se cambió el lugar de la conversación, no podríamos accionar.
+                        </li>
+                        <li>
+                            <b>Proteja su cuenta</b><br> Asegúrese de elegir una contraseña segura y tenga siempre cuidado al iniciar sesión en su cuenta desde una computadora pública o compartida. Si recibe un correo electrónico en el que se le solicita información sobre su cuenta, repórtelo de inmediato.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img class="img-fluid" src="../imagenes/seguridad1.svg" alt="Ilustracion de persona poniendo una contraseña">
+                </div>
+            </div>
+        </section>            
     </main>
-    <div class="seguridadImg">
-        <img class="seguridadImg1" src="../imagenes/seguridad1.svg" alt="Ilustracion de persona poniendo una contraseña">
-    </div>
     <footer class="piePaginaSeg">
         <div class="piePaginaSegu">
             <a href="https://www.behance.net/gallery/131091097/PlusLove-Reporte-UX" target="_blank"><i class="fa-brands fa-behance fa-2xl"></i></a> 
@@ -73,5 +83,6 @@
         <p>© 2022 Florencia Espinoza, todos los derechos reservados.</p>  
         
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
