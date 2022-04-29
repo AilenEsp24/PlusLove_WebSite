@@ -23,8 +23,33 @@
 }
 .piePagina{
     grid-area: pie;
+}
+
+.bodyGrid {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    row-gap: 15px;
+    grid-template-areas:
+        "cabecera cabecera cabecera "
+        "centro centro centro"
+        "centro centro centro"
+        "pie pie pie"      
+}
+
+.cabecera{
+    grid-area: cabecera;
+}
+
+.centro{
+    grid-area:centro;
+}
+
+.piePagina{
+    grid-area: pie;
 
 }
+
 .menu{
     margin-left: 45vh;
     content:"";
@@ -33,82 +58,126 @@
     position:absolute;
     top:0%;
     right:0%;
-    background:linear-gradient(white 10%,rgba(255,255,255,0));
-    list-style: none;
-    text-decoration: none;
-    font-weight: 650;
-    font-size: 22px;
 }
-.menu li{
-    display: inline-block;
-    margin: 32px; 
+
+.nav-link{
+    font-size:20px;
+    font-weight: bold;
 }
-.logo{
-    height: 50px;   
-}
+
 .heroImage{
     width: 1900px;
     height:800px;
     object-fit: cover;
 }
+
 .frase{
     display: inline-block;
     position:absolute;
     left: 320px;
-    bottom: 500px;
+    bottom: 1100px;
     font-weight: bold;
     font-size: 150px;
     color:#20254E  
 }
 
 .frase_boton {
-    padding: 15px;
-    position:absolute;
-    top: 650px;
-    left: 850px;
-    height: 30px;
+    min-width: 150px;
+    height: 60px;
     color: #fff;
+    padding: 5px 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
     display: inline-block;
     outline: none;
     border-radius: 20px;
     border: 2px solid #CF1353;
     background: #CF1353;
-     }
-.frase_boton:hover {
-     background: #fff;
-     color: #CF1353
-     }
+    padding: 10px;
+    position:absolute;
+    top: 900px;
+    left: 840px;    
+  }
 
+  .frase_boton:hover {
+    background: #fff;
+    color: #CF1353;
+}
 
 .frase_boton a{
     color: white;
     text-decoration: none;
 }
+
 a{
     color: #20254e;
     text-decoration: none;
 }
-.carrusel{
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #CF1353; 
-    padding: 20px;
-    
-    
+
+.testimonioTitulo {
+	color: #333;
+	text-align: center;
+	font-weight: bo;
+	position: relative;
+	margin: 30px 0 60px;
 }
-.carrusel_card{
-    background-color: white;
-    box-shadow: 5px 5px 10px #20254E;
-    border-radius: 10px;
-    width: 400px;
-    height: 150px;
-    margin: 20px;
-    padding: 10px;
+.testimonioTitulo::after {
+	content: "";
+	width: 140px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #20254E;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+    opacity: .8;
 }
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+
+.carousel .testimonial {
+	padding: 30px 0 10px;
+  
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #20254E;
+}
+
 .piePagina_seccion{
     height: 50px;
     display: flex;
@@ -117,73 +186,34 @@ a{
     align-items: center;
     gap: 20px;
 }
-.underline{
-    color: var(#20254E);
-    display: inline-block;
-    position: relative;
-}
-.underline:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: #20254E;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.6s ease-out;
-}
-.underline:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-.menuSegundo{
-    width: 1900px;
-    height: 100px;
-    background:linear-gradient(#7379A7,white);
-    list-style: none;
-    text-decoration: none;
-    font-weight: 650;
-    font-size: 22px;
-}
-.menuSegundo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
 
+.back{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#20254E 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
 }
-.bodySegu{
-    min-height: 100vh;
-    position: relative;
-    display: grid;
-    row-gap: 15px;
-    grid-template-areas:
-        "cabeceraS cabeceraS cabeceraS"
-        "texto texto img"
-        "pieS pieS pieS"     
-}
-.cabeceraSeg{
-    grid-area: cabeceraS;
-    
-}
-.seguridadBloque{
-    grid-area: texto;
-    margin: 30px;
-    padding: 10px;
-    width: 800px;
+.container-sm{
+    margin-top: 50px;
     font-size: 18px;
     
 }
-.seguridadImg{
-    grid-area: img;;
-    width: 900px;
+
+.row{
+    background-color: #e5e5f7;
+    opacity: 0.8z;
+    background-image: radial-gradient(#20254E 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    
 }
+
 .piePaginaSeg{
     grid-area: pieS;
     height: 100px;
+    margin-top: 30px;
 }
+
+
 .piePaginaSegu{
     display: flex;
     flex-direction: row;
@@ -202,34 +232,160 @@ a{
     margin-left: 550px;
     margin-top: 40px;
 }
+
 .nosotrosTitulo p{
     margin-top: 30px;
 }
+
 .bloquesNosotros{
     background-color: rgb(221, 221, 221);
     
 }
-.bloqueUno{
+
+.col-lg-6 col-md-6 col-sm-12{
     font-size: 20px;
     margin-top:40px;
     margin-left: 40px;
     height: 400px;
-    width: 800px;
 }
-.bloqueDos{
-    font-size: 20px;
-    margin-left:1000px;
-    height: 400px;
-    width: 800px;
-    position: relative;
-    bottom: 400px;
-}
+    
 .bloqueDos li{
     margin-left: 40px;
 }
+
 .nosotrosDos{
     width: 600px;
     margin-left: 100px;
+}
+
+.bodyCont{
+    display: flex;
+    flex-direction: column;
+}
+
+.otroTitulo{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 3.5em 3em ;
+}
+.contactoTitulo{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 3.5em 3em ;
+}
+    
+.form{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em ;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 50%);
+    text-align: center;
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+    
+.form_link{
+    font-weight: 400;
+    color:black;
+}
+    
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+    
+.form_group{
+    position: relative;
+    --color: #5757577e;
+}
+    
+.form_input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.form_input:not(:placeholder-shown){
+    color: #4d4646;
+}
+    
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+    transform:translateY(-12px) scale(.9);
+    transform-origin: left top;
+    color: #CF1353;
+}
+
+.form_label{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.botones{
+    margin: 30px;
+}
+
+.form_submit {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #CF1353;
+    background: #CF1353;
+    margin-top: 20px;
+  }
+  .form_submit:hover {
+    background: #fff;
+    color: #CF1353
+  }
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #20254E;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
+
+@media (max-width:425px){
+    .form_titl{
+        font-size: 1.8rem;
+    }
 }
 
 .funcionesBloque{
@@ -241,10 +397,12 @@ a{
     margin-left: 550px;
     margin-top: 40px;
 }
+
 .funcionesImg{
     height: 1200px;
     margin-left: 90px;
 }
+
 @media only screen and (max-width:480px) {
     .bodyGrid {
         min-height: 100vh;
