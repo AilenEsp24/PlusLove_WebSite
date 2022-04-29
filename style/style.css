@@ -58,20 +58,11 @@
     position:absolute;
     top:0%;
     right:0%;
-    background:linear-gradient(white 10%,rgba(255,255,255,0));
-    list-style: none;
-    text-decoration: none;
-    font-weight: 650;
-    font-size: 22px;
 }
 
-.menu li{
-    display: inline-block;
-    margin: 32px; 
-}
-
-.logo{
-    height: 50px;   
+.nav-link{
+    font-size:20px;
+    font-weight: bold;
 }
 
 .heroImage{
@@ -84,15 +75,15 @@
     display: inline-block;
     position:absolute;
     left: 320px;
-    bottom: 500px;
+    bottom: 1100px;
     font-weight: bold;
     font-size: 150px;
     color:#20254E  
 }
 
 .frase_boton {
-    min-width: 130px;
-    height: 30px;
+    min-width: 150px;
+    height: 60px;
     color: #fff;
     padding: 5px 5px;
     cursor: pointer;
@@ -105,13 +96,13 @@
     background: #CF1353;
     padding: 10px;
     position:absolute;
-    top: 650px;
-    left: 850px;    
+    top: 900px;
+    left: 840px;    
   }
 
   .frase_boton:hover {
     background: #fff;
-    color: #CF1353
+    color: #CF1353;
 }
 
 .frase_boton a{
@@ -124,24 +115,67 @@ a{
     text-decoration: none;
 }
 
-.carrusel{
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #CF1353; 
-    padding: 20px;  
+.testimonioTitulo {
+	color: #333;
+	text-align: center;
+	font-weight: bo;
+	position: relative;
+	margin: 30px 0 60px;
+}
+.testimonioTitulo::after {
+	content: "";
+	width: 140px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #20254E;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+    opacity: .8;
 }
 
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
 
-.carrusel_card{
-    background-color: white;
-    box-shadow: 5px 5px 10px #20254E;
-    border-radius: 10px;
-    width: 400px;
-    height: 150px;
-    margin: 20px;
-    padding: 10p      
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+
+.carousel .testimonial {
+	padding: 30px 0 10px;
+  
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #20254E;
 }
 
 .piePagina_seccion{
@@ -152,99 +186,25 @@ a{
     align-items: center;
     gap: 20px;
 }
-.underline{
-    color: var(#20254E);
-    display: inline-block;
-    position: relative;
-}
-.underline:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: #20254E;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.6s ease-out;
-}
-.underline:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
 
+.back{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#20254E 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
 }
-
-.underline{
-    color: var(#20254E);
-    display: inline-block;
-    position: relative;
-}
-
-.underline:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: #20254E;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.6s ease-out;
-}
-
-.underline:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.menuSegundo{
-    width: 1900px;
-    height: 100px;
-    background:linear-gradient(#7379A7,white);
-    list-style: none;
-    text-decoration: none;
-    font-weight: 650;
-    font-size: 22px;
-}
-
-.menuSegundo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-
-}
-
-.bodySegu{
-    min-height: 100vh;
-    position: relative;
-    display: grid;
-    row-gap: 15px;
-    grid-template-areas:
-        "cabeceraS cabeceraS cabeceraS"
-        "texto texto img"
-        "pieS pieS pieS"     
-}
-
-.cabeceraSeg{
-    grid-area: cabeceraS;
-    
-}
-
-.seguridadBloque{
-    grid-area: texto;
-    margin: 30px;
-    padding: 10px;
-    width: 800px;
+.container-sm{
+    margin-top: 50px;
     font-size: 18px;
     
 }
 
-.seguridadImg{
-    grid-area: img;;
-    width: 900px;
+.row{
+    background-color: #e5e5f7;
+    opacity: 0.8z;
+    background-image: radial-gradient(#20254E 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    
 }
 
 .piePaginaSeg{
@@ -280,23 +240,14 @@ a{
     background-color: rgb(221, 221, 221);
     
 }
-.bloqueUno{
+
+.col-lg-6 col-md-6 col-sm-12{
     font-size: 20px;
     margin-top:40px;
     margin-left: 40px;
     height: 400px;
-    width: 800px;
 }
-
-.bloqueDos{
-    font-size: 20px;
-    margin-left:1000px;
-    height: 400px;
-    width: 800px;
-    position: relative;
-    bottom: 400px;
-}
-
+    
 .bloqueDos li{
     margin-left: 40px;
 }
@@ -311,6 +262,13 @@ a{
     flex-direction: column;
 }
 
+.otroTitulo{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 3.5em 3em ;
+}
 .contactoTitulo{
     text-align: center;
     margin: auto;
