@@ -1,3 +1,9 @@
+.piePaginaSegu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
 .nav-link {
   font-size: 20px;
   font-weight: bold; }
@@ -36,20 +42,20 @@
 
 .container-sm {
   margin-top: 50px;
-  font-size: 18px; }
+  font-size: 20px; }
   .container-sm .row {
     background-color: #2b2b2b;
     opacity: 0.8z;
     background-image: radial-gradient(#20254E 0.5px, #e5e5f7 0.5px);
     background-size: 10px 10px; }
     .container-sm .row .col-lg-6 col-md-6 col-sm-12 {
-      font-size: 20px;
+      font-size: 18px;
       margin-top: 40px;
       margin-left: 40px;
       height: 400px; }
 
 .col-lg-6 col-md-6 col-sm-12 {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 40px;
   margin-left: 40px;
   height: 400px; }
@@ -60,10 +66,6 @@
   margin-top: 30px; }
 
 .piePaginaSegu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   margin-top: 50px;
   gap: 20px; }
 
@@ -94,13 +96,13 @@
 
 .form {
   background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+  text-align: center;
   margin: auto;
   width: 90%;
   max-width: 400px;
-  padding: 4.5em 3em;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
-  text-align: center; }
+  padding: 4.5em 3em; }
 
 .form_title {
   font-size: 2rem;

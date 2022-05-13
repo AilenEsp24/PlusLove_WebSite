@@ -12,29 +12,17 @@
 }
 
 .otroTitulo{
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    max-width: 1000px;
-    padding: 3.5em 3em ;
+    @include position (100%,1000px);
 }
 .contactoTitulo{
-    text-align: center;
-    margin: auto;
-    width: 90%;
-    max-width: 600px;
-    padding: 3.5em 3em ;
+    @include position (90%,600px);
 }
     
 .form{
     background-color: white;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em ;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0 , 0.50);
-    text-align: center;
+    @include position (90%,400px);
 }
 
 .form_title{
