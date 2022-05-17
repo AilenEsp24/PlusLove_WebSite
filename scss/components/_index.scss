@@ -1,0 +1,223 @@
+.bodyGrid {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    row-gap: 15px;
+    grid-template-areas:
+        "cabecera cabecera cabecera "
+        "centro centro centro"
+        "centro centro centro"
+        "pie pie pie"  
+    
+}
+.cabecera{
+    grid-area: cabecera;
+}
+.centro{
+    grid-area:centro;
+}
+.piePagina{
+    grid-area: pie;
+}
+
+.bodyGrid {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    row-gap: 15px;
+    grid-template-areas:
+        "cabecera cabecera cabecera "
+        "centro centro centro"
+        "centro centro centro"
+        "pie pie pie"      
+}
+
+.cabecera{
+    grid-area: cabecera;
+}
+
+.centro{
+    grid-area:centro;
+}
+
+.piePagina{
+    grid-area: pie;
+
+}
+
+.menu{
+    margin-left: 45vh;
+    content:"";
+    width:100%;
+    height:70%;
+    position:absolute;
+    top:0%;
+    right:0%;
+}
+
+.cabeceraInd{
+    margin-left: 45vh;
+    content:"";
+    width:100%;
+    height:30%;
+    position:absolute;
+    top:0%;
+    right:0%;
+    background:linear-gradient(white 10%,rgba(255,255,255,0));
+}
+
+.nav-link{
+    font-size:20px;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #20254E;
+    font-size: 1.1em;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: #000000;
+  }
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #CF1353;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+  }
+  
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+  }
+
+  
+.heroImage{
+    width: 1900px;
+    height:800px;
+    object-fit: cover;
+}
+
+.frase{
+    display: inline-block;
+    position:absolute;
+    left: 320px;
+    bottom: 1100px;
+    font-weight: bold;
+    font-size: 150px;
+    color:#CF1353;
+      
+}
+
+.frase_boton {
+    min-width: 150px;
+    height: 60px;
+    color: #fff;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #CF1353;
+    background: #CF1353;
+    padding: 10px;
+    position:absolute;
+    top: 900px;
+    left: 840px;    
+  }
+
+  .frase_boton:hover {
+    background: #fff;
+    color: #CF1353;
+}
+
+.frase_boton a{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    color: #20254e;
+    text-decoration: none;
+}
+
+.testimonioTitulo {
+	color: #333;
+	text-align: center;
+	font-weight: bo;
+	position: relative;
+	margin: 30px 0 60px;
+}
+.testimonioTitulo::after {
+	content: "";
+	width: 140px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #20254E;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+    opacity: .8;
+}
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel-item {
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid rgb(80, 80, 80);
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+
+.carousel .testimonial {
+	padding: 30px 0 10px;
+  
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #20254E;
+}
+
+.piePagina_seccion{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

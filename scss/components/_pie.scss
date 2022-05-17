@@ -1,0 +1,22 @@
+
+.piePagina_seccion{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.piePaginaSeg{
+    grid-area: pieS;
+    height: 100px;
+    margin-top: 30px;
+}
+
+
+.piePaginaSegu{
+    @extend %flex-center;
+    margin-top: 50px;
+    gap:20px;
+}

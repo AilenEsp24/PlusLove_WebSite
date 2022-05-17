@@ -1,0 +1,115 @@
+@media only screen and (max-width:480px) {
+    .bodyGrid {
+        min-height: 100vh;
+        position: relative;
+        display: grid;
+        grid-template-areas:
+            "cabecera cabecera"
+            "centro centro"
+            "centro centro"
+            "pie pie"  
+        ;
+      }
+    .frase{
+        display: inline-block;
+        position:absolute;
+        left: 5px;
+        bottom: 660px;
+        font-weight: bold;
+        font-size: 26px;
+        color:#20254E;
+        text-align: center;
+        height: 80px;
+        width: 150;
+    }
+    .frase_boton{
+        border-radius: 30px;
+        padding: 15px;
+        position:absolute;
+        top: 23%;
+        left: 120px;
+        height: 45px;
+        width: 150px;
+        font-size: 16px;   
+        text-align: center;
+    }
+    
+    .container {
+        background:linear-gradient(white 50%,rgba(255,255,255,0));
+
+    }
+    
+    .piePagina_seccion{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        margin-left: 150px;
+    }
+    .piePagina p{
+        font-size: 10px;
+        margin-left: 45px;
+    }
+    .bodySegu{
+        min-height: 100vh;
+        position: relative;
+        display: grid;
+        grid-template-areas:
+            "cabeceraS"
+            "texto"
+            "img"
+            "pieS"     
+    }
+    .seguridadBloque{
+        margin: 40px;
+        width: 300px;
+        font-size: 14px;
+        
+    }
+    .seguridadImg{
+        width: 400px;
+        margin-left: 10px;
+    }
+    .piePaginaSeg{
+        height: 100px;
+    }
+    .piePaginaSegu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap:20px;
+        margin-left: 160px;
+    }
+    .piePaginaSeg p{
+        font-size: 10px;
+        margin-left: 50px;
+        padding: 20px;
+
+    }
+    .menuSegundo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .menuSegundo li{
+        margin-left: 150px;
+    }
+    .menuSegundo{
+        width: 100vh;
+        height: 300px;
+        background:linear-gradient(#7379A7,white);
+        list-style: none;
+        text-decoration: none;
+        font-weight: 650;
+        font-size: 22px;
+    }
+
+    .nosotrosDos{
+        width: 390px;
+        margin-left:1px;
+    }
+}
