@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../imagenes/logotipo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/2d82bb3f09.js" crossorigin="anonymous"></script>
@@ -14,74 +14,138 @@
     <title>PlusLove</title>
 </head>
 <body class="back">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="../imagenes/logoCompleto_Mesa de trabajo 1.png" alt="logo-PlusLove" width="170" height="30"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="funsiones.html">Funciones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="seguridad.html">Seguridad</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+  <header class="cabeceraSeg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-md-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../imagenes/logoCompleto_Mesa de trabajo 1.png" alt="" width="170" height="30"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-grey active" href="#">Funciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-grey" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-grey" href="seguridad.html">Seguridad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-grey" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>  
     </header>
     <main>
         <section class="container-sm">
             <div class="otroTitulo">
                 <h1>¿Como funciona PlusLove?</h1>
                 <p>PlusLove funciona de manera muy sencilla: creas tu usuario, navegas entre perfiles diversos hasta hallar alguna personalidad interesante para ti. En el caso de que del otro lado se piense igual … ¡tadan! Se logra un “match” de dos, tres o cuatro personas.</p>
-            </div>    
+                <h2>Démosle un vistazo más a profundidad...</h2>
+              </div>    
         </section>
-        <section class="container-sm">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="../imagenes/ReporteUX2.jpg" class="d-block w-100" alt="mockups-PlusLove">
+        <section class="muestraApp">
+          <div class="funcionApp">
+            <div class="cajaApp">
+              <div class="imgCj">
+                <img src="/imagenes/Registro completo.png">
+              </div>
+              <div class="capa capa1"></div>
+              <div class="capa capa2"></div>
+              <div class="contenidoCj">
+                <div>
+                  <h3>Registro</h3>
+                  <p>Iniciar sesión es fácil y muy intuitivo ¡Nos interesa conocerte mejor! Completa todo lo que puedas de tu perfil </p>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../imagenes/ReporteUX1.jpg" class="d-block w-100" alt="mockups-PlusLove">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/ReporteUX3.jpg" class="d-block w-100" alt="mockups-PlusLove">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/ReporteUX29.jpg" class="d-block w-100" alt="mockups-PlusLove">
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+              </div>
             </div>
-        </section>  
+            <div class="cajaApp">
+              <div class="imgCj">
+                <img src="/imagenes/Descubrir.png">
+              </div>
+              <div class="capa capa1"></div>
+              <div class="capa capa2"></div>
+              <div class="contenidoCj">
+                <div>
+                  <h3>Descubrir</h3>
+                  <p>Una vez iniciada la sesión serás capaz de visualizar de manera fácil e intuitiva al resto de usuarios</p>
+                </div>
+              </div>
+            </div>
+            <div class="cajaApp">
+              <div class="imgCj">
+                <img src="/imagenes/APerfil.png">
+              </div>
+              <div class="capa capa1"></div>
+              <div class="capa capa2"></div>
+              <div class="contenidoCj">
+                <div>
+                  <h3>Información</h3>
+                  <p>Aquí podrás ver más en detalle, información sobre otra persona, como sus hobbys, que lo motiva y sus aspiraciones</p>
+                </div>
+              </div>
+            </div>
+            <div class="cajaApp">
+              <div class="imgCj">
+                <img src="/imagenes/Match.png">
+              </div>
+              <div class="capa capa1"></div>
+              <div class="capa capa2"></div>
+              <div class="contenidoCj">
+                <div>
+                  <h3>Match</h3>
+                  <p>¡Felicidades! Lograste un “Match” esto quiere decir que tú y otras personas tienen interés en conocerse mutuamente.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cajaApp">
+              <div class="imgCj">
+                <img src="/imagenes/Mensajes.png">
+              </div>
+              <div class="capa capa1"></div>
+              <div class="capa capa2"></div>
+              <div class="contenidoCj">
+                <div>
+                  <h3>Mensajes</h3>
+                  <p>¡Un lugar donde encontrar todas las conversaciones que iniciamos, organizados en dos o más integrantes!</p>
+                </div>
+              </div>
+            </div>
+            <div class="cajaApp">
+              <div class="imgCj">
+                <img src="/imagenes/Chat.png">
+              </div>
+              <div class="capa capa1"></div>
+              <div class="capa capa2"></div>
+              <div class="contenidoCj">
+                <div>
+                  <h3>Chat</h3>
+                  <p>¡Y listo! A conocerse y disfrutar de nuevas conexiones.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="prototipo">
+          <div class="contenidoProt">
+            <h4>¡Prueba la funcionalidad completa en nuestro prototipo de alta fidelidad!</h4>
+            <a class="botone" href="https://www.figma.com/proto/4CtNBnflHvhkYSt4lIVgnH/UIKIT%2BPrototipo?node-id=45%3A403&scaling=scale-down&page-id=0%3A1&starting-point-node-id=45%3A403" target="_blank">¡Pruebame!</a>
+          </div>
+        </section>
+          
     </main>
     <footer class="piePaginaSeg">
-        <div class="piePaginaSegu">
-            <a href="https://www.behance.net/gallery/131091097/PlusLove-Reporte-UX" target="_blank"><i class="fa-brands fa-behance fa-2xl"></i></a> 
-            <a href="https://www.linkedin.com/in/ailen-espinoza-32425818a/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
-        </div>
-        <p>© 2022 Florencia Espinoza, todos los derechos reservados.</p>  
-        
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          <div class="piePaginaSegu">
+              <a href="https://www.behance.net/gallery/131091097/PlusLove-Reporte-UX" target="_blank"><i class="fa-brands fa-behance fa-2xl fa-beat"></i></a> 
+              <a href="https://www.linkedin.com/in/ailen-espinoza-32425818a/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl fa-beat"></i></a>
+          </div>
+          <p>© 2022 Florencia Espinoza, todos los derechos reservados.</p>  
+          
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

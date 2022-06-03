@@ -7,24 +7,31 @@
     <meta name="keywords" content="poliamor,citas, relationships, amor, relaciones abiertas, aplicacion, app ">
     <meta name="description" content="PlusLove es una aplicación diseñada por y para personas que buscan un plus a sus relaciones manteniendo vínculos con otros, sin límites homogamicos y hegemónicos.">
     <link rel="icon" type="image/x-icon" href="./imagenes/logotipo.png"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/2d82bb3f09.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>PlusLove | Home</title>
 </head>
-<body class="bodyGrid">
+<body class="home">
+  <div class="home_title">
+    <div class="home_title_text">
+        <h1 class="animate__animated animate__fadeIn" >PlusLove</h1>
+        <span>Porque amar es para más de dos</span>
+    </div>
+  </div>
+  <div class="vacio">
     <header class="cabeceraInd">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
-        <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-md-3">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./imagenes/logoCompleto_Mesa de trabajo 1.png" alt="" width="170" height="30"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="mx-auto"></div>
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link text-grey" href="./paginas/funciones.html">Funciones</a>
@@ -42,59 +49,73 @@
           </div>
         </div>
       </nav>  
-    </header>
-    <main class="centro"> 
-        <div class="heroImagen">
-            <img class="img-fluid" src="./imagenes/heroimage.png" alt="foto de corazon">
-                <h1 class="frase">Porque amar es para más de dos</h1>
-                <h3 class="frase_boton"><a href="https://www.figma.com/proto/4CtNBnflHvhkYSt4lIVgnH/UIKIT%2BPrototipo?node-id=45%3A403&scaling=scale-down&page-id=0%3A1&starting-point-node-id=45%3A403" target="_blank">¡Dale un vistazo!</a></h3>
+      </header>
+  </div>
+  <section class="conteiner">
+    <div class="boxes">
+      <div class="boxOne">
+          <img class="imgOne" src="./imagenes/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="">
         </div>
-        <div class="container-fluid">
-            <div class="row img">
-                <div class="col-md-8 col-center m-auto">
-                    <h2 class="testimonioTitulo">Testimonios</h2>
-                    <div id="carrusel" class="carousel slide" data-ride="carousel">
-                        <!-- Carrusel de experiencias -->
-                        <div class="carousel-inner">
-                            <div class="item carousel-item active">
-                                <div class="img-box"><img src="./imagenes/maria.jpg" alt=""></div>
-                                <p class="testimonial">"El amor es un sentimiento muy grande para solo una persona, con PlusLove logré un espacio seguro donde conocerme con otros vínculos”</p>
-                                <p class="overview"><b>María Nuñez</b>, Atención al publico</p>
-                            </div>
-                            <div class="item carousel-item">
-                                <div class="img-box"><img src="./imagenes/santiago.jpg" alt=""></div>
-                                <p class="testimonial">“Cuando alguien me atrae, lo digo, no soy para nada cerrado y ahora logre ampliar mis vínculos y ya somos 3 viviendo juntos, con mucho amor”</p>
-                                <p class="overview"><b>Santiago Mendez</b>, Arquitecto</p>
-                            </div>
-                            <div class="item carousel-item">
-                                <div class="img-box"><img src="./imagenes/juan.jpg" alt=""></div>
-                                <p class="testimonial">“El amor es un sentimiento muy grande para solo una persona, con PlusLove logré un espacio seguro donde conocerme con otros vínculos”</p>
-                                <p class="overview"><b>Juan Gimenez</b>, Fotografo</p>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                          </button>
+        <div class="boxTwo">
+          <img class="imgTwo" src="./imagenes/sithamshu-manoj-bik_lIl9Nco-unsplash.jpg" alt="">
+        </div>
+        <div class="boxThree">
+          <img class="imgThree" src="./imagenes/katy-anne-nTP8aZjedqI-unsplash.jpg" alt="">
+        </div>
+        <div class="boxFour">
+          <img class="imgFour" src="./imagenes/serge-vorobets-pnJ2sMrBq0Y-unsplash.jpg" alt="">
+        </div>
+        <div class="boxFive">
+          <img class="imgFive" src="./imagenes/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="">
+        </div>
+        <div class="boxSix">
+          <img class="imgSix" src="./imagenes/toa-heftiba-l_ExpFwwOEg-unsplash.jpg" alt="">
+        </div>
+    </div>   
+    <div class="container-fluid">
+      <div class="row img">
+          <div class="col-md-8 col-center m-auto ">
+              <h2 class="testimonioTitulo">Testimonios</h2>
+              <div id="carrusel" class="carousel slide" data-ride="carousel">
+                    <!-- Carrusel de experiencias -->
+                <div class="carousel-inner">
+                  <div class="item carousel-item active">
+                    <div class="img-box"><img src="./imagenes/maria.jpg" alt=""></div>
+                      <p class="testimonial">"El amor es un sentimiento muy grande para solo una persona, con PlusLove logré un espacio seguro donde conocerme con otros vínculos”</p>
+                      <p class="overview"><b>María Nuñez</b>, Atención al publico</p>
                     </div>
-                </div>
-            </div>
-        </div>    
-    </main>
-        
-    
-    <footer class="piePagina">
-        <div class="piePagina_seccion">
-            <a href="https://www.behance.net/gallery/131091097/PlusLove-Reporte-UX" target="_blank"><i class="fa-brands fa-behance fa-2xl"></i></a> 
-            <a href="https://www.linkedin.com/in/ailen-espinoza-32425818a/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
-        </div>
-        <p>© 2022 Florencia Espinoza, todos los derechos reservados.</p>  
-        
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+                    <div class="item carousel-item">
+                      <div class="img-box"><img src="./imagenes/santiago.jpg" alt=""></div>
+                      <p class="testimonial">“Cuando alguien me atrae, lo digo, no soy para nada cerrado y ahora logre ampliar mis vínculos y ya somos 3 viviendo juntos, con mucho amor”</p>
+                      <p class="overview"><b>Santiago Mendez</b>, Arquitecto</p>
+                    </div>
+                    <div class="item carousel-item">
+                      <div class="img-box"><img src="./imagenes/juan.jpg" alt=""></div>
+                      <p class="testimonial">“El amor es un sentimiento muy grande para solo una persona, con PlusLove logré un espacio seguro donde conocerme con otros vínculos”</p>
+                      <p class="overview"><b>Juan Gimenez</b>, Fotografo</p>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  <footer class="piePagina">
+    <div class="piePagina_seccion">
+        <a href="https://www.behance.net/gallery/131091097/PlusLove-Reporte-UX" target="_blank"><i class="fa-brands fa-behance fa-2xl fa-beat"></i></a> 
+        <a href="https://www.linkedin.com/in/ailen-espinoza-32425818a/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl fa-beat"></i></a>
+    </div>
+    <p>© 2022 Florencia Espinoza, todos los derechos reservados.</p>       
+  </footer>  
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
