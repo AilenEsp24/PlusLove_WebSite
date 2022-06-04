@@ -41,9 +41,14 @@
 }
 
 .fa-brands{
-    color: #CF1353;
+    color: $color-principal-uno;
 }
 
 .fa-brands:hover{
-    color: #20254E;
+    color: $color-principal-dos;
+}
+
+.googlebuttom{
+    height: 70px;
+    
 }

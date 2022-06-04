@@ -12,7 +12,7 @@
 .back{
     background-color: #e5e5f7;
     opacity: 0.8;
-    background-image: radial-gradient(#20254E 0.5px, #e5e5f7 0.5px);
+    background-image: radial-gradient($color-principal-dos 0.5px, #e5e5f7 0.5px);
     background-size: 10px 10px;
 }
 
@@ -110,19 +110,19 @@
 }
 
 .funcionApp .cajaApp .capa.capa1{
-    background: #20254E;
+    background: $color-principal-dos;
     transform: translateY(100%);
     border-radius: 10px;
 }
 
 .funcionApp .cajaApp:hover .capa.capa1{
-    background: #20254E;
+    background: $color-principal-dos;
     transform: translateY(-100%);
     border-radius: 10px;
 }
 
 .funcionApp .cajaApp .capa.capa2{
-    background: #CF1353;
+    background: $color-principal-uno;
     transform: translateY(200%);
     border-radius: 10px;
 }
@@ -191,13 +191,13 @@
     display: inline-block;
     outline: none;
     border-radius: 30px;
-    border: 2px solid #ff0a78;
-    background: linear-gradient(#20254E,#CF1353);
+    border: 2px solid $color-principal-uno;
+    background: linear-gradient($color-principal-dos,$color-principal-uno);
     text-align: center;
 }
 
 .prototipo .contenidoProt .botone:hover{
     background: #fff;
-    color: #CF1353
+    color: $color-principal-uno
 }
 

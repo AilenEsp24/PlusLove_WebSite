@@ -490,7 +490,7 @@
   display: inline-block;
   outline: none;
   border-radius: 30px;
-  border: 2px solid #ff0a78;
+  border: 2px solid #CF1353;
   background: linear-gradient(#20254E, #CF1353);
   text-align: center; }
 
@@ -739,6 +739,9 @@
 
 .fa-brands:hover {
   color: #20254E; }
+
+.googlebuttom {
+  height: 70px; }
 
 @media only screen and (max-width: 480px) {
   .cabeceraInd {

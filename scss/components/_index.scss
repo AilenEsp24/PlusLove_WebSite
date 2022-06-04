@@ -14,7 +14,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #CF1353;
+    background-color: $color-principal-uno;
     width: 0%;
     content: "";
     height: 4px;
@@ -208,7 +208,7 @@
 	position: absolute;
 	margin: 0 auto;
 	height: 3px;
-	background: #20254E;
+	background: $color-principal-dos;
 	left: 0;
 	right: 0;
 	bottom: -10px;
@@ -235,7 +235,7 @@
 	height: 135px;
 	margin: 0 auto;
 	padding: 5px;
-	border: 3px solid #CF1353;
+	border: 3px solid $color-principal-uno;
 	border-radius: 50%;
 }
 .carousel .img-box img {
@@ -254,6 +254,6 @@
 }
 .carousel .overview b {
 	text-transform: uppercase;
-	color: #20254E;
+	color: $color-principal-dos;
 }
 
