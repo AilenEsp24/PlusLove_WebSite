@@ -1,0 +1,30 @@
+$color-principal-uno:#CF1353;
+$color-principal-dos:#20254E;
+$tipografia-general:'Poppins', sans-serif;
+
+$tamanio-tipo:(
+    titulo:24px,
+    subtitulo:20px,
+    parrafo:18px,
+    leyenda:12px,
+);
+
+%flex-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+};
+
+@mixin position ($width, $max-width){
+    text-align: center;
+    margin: auto;
+    width:$width;
+    max-width:$max-width;
+    @if $max-width >= 600px {
+        padding:3.5em 3em   
+    } @else {
+        padding:4.5em 3em     
+    }
+};
+

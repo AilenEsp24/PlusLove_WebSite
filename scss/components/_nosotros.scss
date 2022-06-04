@@ -1,0 +1,81 @@
+.row{
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+
+}
+
+.back{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#20254E 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+}
+
+.backC{
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+.nosotrosTitulo{
+    color: rgb(45, 45, 45);
+    font-size: 20px;
+    text-align: center;
+    height: 400px;
+    width: 800px;
+    margin-left: 550px;
+    margin-top: 40px;
+}
+
+.nosotrosTitulo p{
+    margin-top: 30px;
+}
+
+.bloquesNosotros{
+    background-color: rgb(221, 221, 221);
+    
+}
+
+.nosotrosDos{
+    height:300px;
+    width: 400px;
+}
+
+.col-lg-6 col-md-6 col-sm-12{
+    font-size: 20px;
+    margin-top:40px;
+    margin-left: 40px;
+    height: 400px;
+}
+    
+.bloqueDos li{
+    margin-left: 40px;
+}
+
+.nosotrosDos{
+    width: 600px;
+    margin-left: 100px;
+}
+
+.bodyCont{
+    display: flex;
+    flex-direction: column;
+}
+
+.otroTitulo{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 3.5em 3em ;
+}
+

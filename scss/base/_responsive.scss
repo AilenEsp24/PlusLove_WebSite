@@ -1,0 +1,466 @@
+@media only screen and (max-width:480px) {
+    .cabeceraInd{
+        margin: 0%;
+        padding: 0%;
+        position: absolute; 
+    }
+
+    .cabeceraSeg{
+        margin: 0%;
+        padding: 0%;
+        position: relative; 
+    }
+    
+    .home_title{
+        display: flex;
+        justify-content: center;
+        color: #20254E;
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: center;
+        background-color: #f0bfcd;
+        
+    }
+    
+    .home_title_text{
+        position:fixed;
+        
+    }
+    
+    .home_title_text h1{
+        font-weight: bold;
+        font-size: 3rem;
+        
+    }
+    
+    .vacio{
+        width: 100%;
+        height: 1000px;
+        background-color: #f0bfcd;
+    }
+    
+    .conteiner{
+        width: 100%;
+        height: 2000px;
+        background-color: #f0bfcd;
+    }
+    
+    .boxes{
+        display: flex;
+        position: sticky;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        background-color: #f0bfcd;
+        padding-left: 90px;
+        padding-top: 5px;
+    }
+    
+    .boxOne{
+        position: relative;
+        margin: 5px;
+        height: 250px;
+        width: 170px;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .boxTwo{
+        position: relative;
+        margin: 5px;
+        height: 250px;
+        width: 170px;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .boxThree{
+        position: relative;
+        margin: 5px;
+        height: 250px;
+        width: 170px;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .boxFour{
+        position: relative;
+        margin: 5px;
+        height: 250px;
+        width: 170px;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .boxFive{
+        position: relative;
+        margin: 5px;
+        height: 250px;
+        width: 170px;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .boxSix{
+        position: relative;
+        margin: 5px;
+        height: 250px;
+        width: 170px;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .imgOne{
+        height: 250px;
+        width: 170px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .imgTwo{
+        height: 250px;
+        width: 170px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .imgThree{
+        height: 250px;
+        width: 170px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .imgFour{
+        height: 250px;
+        width: 170px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .imgFive{
+        height: 250px;
+        width: 170px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .imgSix{
+        height: 250px;
+        width: 170px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .nav-link{
+        font-size:20px;
+        font-weight: bold;
+    }
+    
+    .navbar .navbar-nav .nav-link {
+        color: #20254E;
+        font-size: 1.1em;
+      }
+      .navbar .navbar-nav .nav-link:hover {
+        color: #ffffff;
+      }
+      .navbar .navbar-nav .nav-item {
+        position: relative;
+      }
+      .navbar .navbar-nav .nav-item::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: #CF1353;
+        width: 0%;
+        content: "";
+        height: 4px;
+        transition: all 0.5s;
+      }
+      
+      .navbar .navbar-nav .nav-item:hover::after {
+        width: 100%;
+      }
+    
+    .testimonioTitulo {
+        color: rgb(35, 35, 35);
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        margin: 30px 0 60px;
+    }
+    .testimonioTitulo::after {
+        content: "";
+        width: 140px;
+        position: absolute;
+        margin: 0 auto;
+        height: 3px;
+        background: #20254E;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+    }
+    
+    .col-center {
+        margin: 0 auto;
+        float: none !important;
+    }
+    .carousel {
+        margin: 5px ;
+        padding: 0 5px;
+    }
+    .carousel-item {
+        color: rgb(28, 28, 28);
+        font-size: 26px;
+        text-align: center;
+        overflow: hidden;
+        min-height: 290px;
+    }
+    
+    .carousel .item .img-box {
+        width: 135px;
+        height: 135px;
+        margin: 0 auto;
+        padding: 5px;
+        border: 3px solid #CF1353;
+        border-radius: 50%;
+    }
+    .carousel .img-box img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 50%;
+    }
+    
+    .carousel .testimonial {
+        padding: 30px 0 10px;
+      
+    }
+    .carousel .overview {	
+        font-style: italic;
+    }
+    .carousel .overview b {
+        text-transform: uppercase;
+        color: #20254E;
+    }
+
+    .nosotrosDos{
+        padding: 0;
+        margin: 0;
+        height: 350px;
+        width: 350px;
+    }
+
+    .muestraApp{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 60vh;
+    }
+    
+    .funcionApp{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 1500px;
+        gap:20px;
+    
+    }
+    
+    .funcionApp .cajaApp{
+        position: relative;
+        width: 250px;
+        height: 450px;
+        overflow: hidden;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow:0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 10.5px );
+        -webkit-backdrop-filter: blur( 10.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .funcionApp .cajaApp .imgCj{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 1.5s ease-in-out;
+    }
+    
+    .funcionApp .cajaApp:hover .imgCj{
+        transform: translateY(-100%);
+    }
+    
+    .funcionApp .cajaApp .imgCj img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit:cover ;
+    }
+    
+    .funcionApp .cajaApp .capa{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 1.5s ease-in-out;
+    }
+    
+    .funcionApp .cajaApp .capa.capa1{
+        background: #20254E;
+        transform: translateY(100%);
+        border-radius: 10px;
+    }
+    
+    .funcionApp .cajaApp:hover .capa.capa1{
+        background: #20254E;
+        transform: translateY(-100%);
+        border-radius: 10px;
+    }
+    
+    .funcionApp .cajaApp .capa.capa2{
+        background: #CF1353;
+        transform: translateY(200%);
+        border-radius: 10px;
+    }
+    
+    .funcionApp .cajaApp:hover .capa.capa2{
+        background: #CF1353;
+        transform: translateY(-200%);
+        border-radius: 10px;
+    }
+    
+    .funcionApp .cajaApp .contenidoCj{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 1.5s ease-in-out;
+        transform: translateY(300%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    
+    .funcionApp .cajaApp:hover .contenidoCj{
+        transform: translateY(0);
+    }
+    .container-sm{
+        margin-top: 100px;
+        font-size: 18px;  
+    }
+    
+    .prototipo{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        height: 300px;
+        width: 100%;
+        background: rgba( 207, 19, 83, 0.15 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        
+    }
+    
+    .prototipo .contenidoProt{
+        text-align: center; 
+    }
+    
+    .prototipo .contenidoProt h4{
+        padding-bottom: 30px;
+    }
+    
+    .prototipo .contenidoProt .botone{
+        text-decoration: none;
+        min-width: 150px;
+        height: 50px;
+        color: #fff;
+        padding: 10px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 30px;
+        border: 2px solid #ff0a78;
+        background: linear-gradient(#20254E,#CF1353);
+        text-align: center;
+    }
+    
+    .prototipo .contenidoProt .botone:hover{
+        background: #fff;
+        color: #CF1353
+    }
+    
+    .backC{
+        height: 250px;
+        width: 250px;
+        padding: 0%;
+        margin: 0%;
+        
+    }
+    
+    
+    .piePagina{
+        height: 150px;
+    }
+    
+    .piePagina_seccion{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        gap: 30px;
+    }
+    
+    .piePagina p{
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        color: #fff;
+    }
+}
+

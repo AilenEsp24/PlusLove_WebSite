@@ -1,0 +1,48 @@
+.row{
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+
+}
+
+.back{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#20254E 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+}
+
+.backC{
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+.col-lg-6 col-md-6 col-sm-12{
+    font-size:map-get($tamanio-tipo,parrafo);
+    margin-top:40px;
+    margin-left: 40px;
+    height: 400px;
+}
+
+.piePaginaSeg{
+    grid-area: pieS;
+    height: 100px;
+    margin-top: 30px;
+}
+
+
+.piePaginaSegu{
+    @extend %flex-center;
+    margin-top: 50px;
+    gap:20px;
+}
+
