@@ -17,6 +17,11 @@
     
 }
 
+.nosotrosDos{
+    height:300px;
+    width: 400px;
+}
+
 .col-lg-6 col-md-6 col-sm-12{
     font-size: 20px;
     margin-top:40px;
@@ -32,3 +37,17 @@
     width: 600px;
     margin-left: 100px;
 }
+
+.bodyCont{
+    display: flex;
+    flex-direction: column;
+}
+
+.otroTitulo{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 3.5em 3em ;
+}
+

@@ -1,22 +1,49 @@
 
+.piePagina{
+    height: 150px;
+}
+
 .piePagina_seccion{
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    padding-top: 40px;
+    gap: 30px;
+}
+
+.piePagina p{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: #fff;
 }
 
 .piePaginaSeg{
-    grid-area: pieS;
     height: 100px;
     margin-top: 30px;
 }
 
 
 .piePaginaSegu{
-    @extend %flex-center;
-    margin-top: 50px;
-    gap:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap:30px;
+}
+
+.piePaginaSeg p{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.fa-brands{
+    color: #CF1353;
+}
+
+.fa-brands:hover{
+    color: #20254E;
 }

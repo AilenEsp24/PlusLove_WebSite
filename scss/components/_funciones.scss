@@ -4,3 +4,172 @@
     
 }
 
+.muestraApp{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 60vh;
+}
+
+.funcionesBloque{
+    color: rgb(45, 45, 45);
+    font-size: 20px;
+    text-align: center;
+    height: 300px;
+    width: 800px;
+    margin-left: 550px;
+    margin-top: 40px;
+}
+
+.funcionesImg{
+    height: 1200px;
+    margin-left: 90px;
+}
+
+.funcionApp{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 1500px;
+    gap:20px;
+
+}
+
+.funcionApp .cajaApp{
+    position: relative;
+    width: 300px;
+    height: 410px;
+    overflow: hidden;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.funcionApp .cajaApp .imgCj{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1.5s ease-in-out;
+}
+
+.funcionApp .cajaApp:hover .imgCj{
+    transform: translateY(-100%);
+}
+
+.funcionApp .cajaApp .imgCj img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit:cover ;
+}
+
+.funcionApp .cajaApp .capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1.5s ease-in-out;
+}
+
+.funcionApp .cajaApp .capa.capa1{
+    background: #20254E;
+    transform: translateY(100%);
+    border-radius: 10px;
+}
+
+.funcionApp .cajaApp:hover .capa.capa1{
+    background: #20254E;
+    transform: translateY(-100%);
+    border-radius: 10px;
+}
+
+.funcionApp .cajaApp .capa.capa2{
+    background: #CF1353;
+    transform: translateY(200%);
+    border-radius: 10px;
+}
+
+.funcionApp .cajaApp:hover .capa.capa2{
+    background: #CF1353;
+    transform: translateY(-200%);
+    border-radius: 10px;
+}
+
+.funcionApp .cajaApp .contenidoCj{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1.5s ease-in-out;
+    transform: translateY(300%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.funcionApp .cajaApp:hover .contenidoCj{
+    transform: translateY(0);
+}
+.container-sm{
+    position: relative;
+    margin-top: 100px;
+    font-size: 18px;  
+}
+
+.prototipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background: rgba( 207, 19, 83, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.prototipo .contenidoProt{
+    text-align: center; 
+}
+
+.prototipo .contenidoProt h4{
+    padding-bottom: 30px;
+}
+
+.prototipo .contenidoProt .botone{
+    text-decoration: none;
+    min-width: 150px;
+    height: 50px;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 30px;
+    border: 2px solid #ff0a78;
+    background: linear-gradient(#20254E,#CF1353);
+    text-align: center;
+}
+
+.prototipo .contenidoProt .botone:hover{
+    background: #fff;
+    color: #CF1353
+}
+
