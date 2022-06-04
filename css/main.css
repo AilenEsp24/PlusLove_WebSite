@@ -53,7 +53,7 @@
   width: 100%; }
 
 .home {
-  background-image: url(/imagenes/fondo.gif);
+  background-image: url(../imagenes/fondo.gif);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -667,6 +667,38 @@
 @media (max-width: 425px) {
   .form_titl {
     font-size: 1.8rem; } }
+
+.error {
+  width: 50%; }
+
+.contenido {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center; }
+
+.boton {
+  text-align: center;
+  text-decoration: none;
+  min-width: 200px;
+  height: 30px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #CF1353;
+  background: #CF1353; }
+
+.boton:hover {
+  background: #fff;
+  color: #CF1353; }
 
 .piePagina {
   height: 150px; }

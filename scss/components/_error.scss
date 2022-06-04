@@ -1,0 +1,34 @@
+.error{
+    width: 50%;
+}
+
+.contenido{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton {
+    text-align: center;
+    text-decoration: none;
+    min-width: 200px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid $color-principal-uno;
+    background: $color-principal-uno;
+  }
+  .boton:hover {
+    background: #fff;
+    color: $color-principal-uno
+  }
